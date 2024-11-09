@@ -8,8 +8,7 @@ This is a simple web application built with Flask that predicts home prices base
 3. [Installation Instructions](#installation-instructions)
 4. [How to Use](#how-to-use)
 5. [Model Information](#model-information)
-6. [Contributors](#contributors)
-7. [License](#license)
+
 
 ## Features
 - Predict home prices using a trained machine learning model.
