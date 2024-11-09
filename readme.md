@@ -1,16 +1,32 @@
 # Home Price Prediction Flask App
 
-This project is a Flask-based web application that predicts home prices based on **area**, **number of rooms**, and **age of the property**. It uses a trained machine learning model to provide real-time price predictions and is containerized with Docker for easy deployment.
+This is a simple web application built with Flask that predicts home prices based on **area**, **number of rooms**, and **age** of the house using a machine learning model. The app is containerized using Docker for easy deployment and scalability.
+
+## Table of Contents
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation Instructions](#installation-instructions)
+4. [How to Use](#how-to-use)
+5. [Model Information](#model-information)
+6. [Docker Usage](#docker-usage)
+7. [License](#license)
 
 ## Features
+- Real-time prediction of home prices based on user input.
+- Web application built with Flask and styled with HTML and CSS.
+- Dockerized for easy deployment in any environment.
 
-- **Input form**: Allows users to enter property details (area, rooms, age).
-- **Real-time price prediction**: Displays predicted prices based on the input data.
-- **Dockerized**: Easily deployable with Docker.
+## Technologies Used
+- **Python 3.x**
+- **Flask** (Web Framework)
+- **scikit-learn** (Machine Learning)
+- **HTML, CSS** (Frontend)
+- **Docker** (Containerization)
 
-## Demo
+## Installation Instructions
+To run this project locally, follow these steps:
 
-![App Demo Screenshot](path/to/your/demo-screenshot.png)
-
-## Project Structure
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Lamouchi-Bayrem/home-price-prediction-flask.git
+   cd home-price-prediction-flask
