@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='images/house.jpg') }}'); background-size: cover; background-position: center;">
+    
+    <!-- Blur Effect Overlay -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); filter: blur(8px); z-index: -1;"></div>
+    
+    <div class="container">
+        <!-- Heading -->
+        <h1>Predict Home Price</h1>
+        
+        <!-- Prediction Form -->
+        <form action="/predict" method="post">
+            <label for="area">Area (sq ft):</label>
+            <input type="number" id="area" name="area" required>
+
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" required>
+
+            <label for="age">Age of House:</label>
+            <input type="number" id="age" name="age" required>
+
+            <input type="submit" value="Predict">
+        </form>
+
+        <!-- Prediction Result -->
+        {% if prediction_text %}
+            <h2>{{ prediction_text }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
