@@ -16,18 +16,19 @@
         <h1>Predict Home Price</h1>
         
         <!-- Prediction Form -->
-        <form action="/predict" method="post">
-            <label for="area">Area (sq ft):</label>
-            <input type="number" id="area" name="area" required>
+       <h1>Home Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="area">Area (sq ft):</label>
+        <input type="number" name="area" id="area" required><br><br>
 
-            <label for="rooms">Number of Rooms:</label>
-            <input type="number" id="rooms" name="rooms" required>
+        <label for="rooms">Number of Rooms:</label>
+        <input type="number" name="rooms" id="rooms" required><br><br>
 
-            <label for="age">Age of House:</label>
-            <input type="number" id="age" name="age" required>
+        <label for="age">Age of the House (years):</label>
+        <input type="number" name="age" id="age" required><br><br>
 
-            <input type="submit" value="Predict">
-        </form>
+        <button type="submit">Predict Price</button>
+    </form>
 
         <!-- Prediction Result -->
         {% if prediction_text %}

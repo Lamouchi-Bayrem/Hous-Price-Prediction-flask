@@ -1,0 +1,8 @@
+-- Create a table for storing home data
+CREATE TABLE home_data (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    area FLOAT NOT NULL,
+    rooms INTEGER NOT NULL,
+    age INTEGER NOT NULL,
+    predicted_price FLOAT
+);

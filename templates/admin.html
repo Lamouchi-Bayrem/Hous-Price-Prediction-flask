@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <h2>User Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Area (sq ft)</th>
+                <th>Rooms</th>
+                <th>Age (years)</th>
+                <th>Predicted Price ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in data %}
+            <tr>
+                <td>{{ entry.id }}</td>
+                <td>{{ entry.area }}</td>
+                <td>{{ entry.rooms }}</td>
+                <td>{{ entry.age }}</td>
+                <td>{{ entry.predicted_price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
