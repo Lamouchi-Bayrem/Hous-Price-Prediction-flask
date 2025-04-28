@@ -5,6 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import pickle
 
+
 # Sample data: area (sq ft), rooms, age of house, price ($)
 data = {
     'area': [1500, 2500, 1800, 2200, 1700],
